@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <meta charset="utf-8">
+  <title>Juan Fco García | Científico de datos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Welcome to Yan Holtz's homepage. I'm a I'm a data analysis and visualisation enthousiast with a background in biology.">
+  <meta name="keywords"
+    content="Consulting,Freelance,Datascience,Training,Data,Dataviz,Datavisualization,Plot,Chart,Graph,R,Python,D3,Learning,Caveat,Pitfall,Mistake,Classification">
+  <meta name="author" content="Juan Fco García">
+  <link rel="icon" href="static/img/logo.png">
+
+  <!-- Control appearance when shared by social media -->
+  <meta property="og:title" content="Yan Holtz | Data - Science - Viz" />
+  <meta property="og:image" content="img/logo/Home_single_medium.png" />
+  <meta property="og:description"
+    content="Welcome to Yan Holtz's homepage. I'm a I'm a data analysis and visualisation enthousiast with a background in biology." />
+  <meta property='og:url' content="https://www.yan-holtz.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.min.js" integrity="sha512-zjlf0U0eJmSo1Le4/zcZI51ks5SjuQXkU0yOdsOBubjSmio9iCUp8XPLkEAADZNBdR9crRy3cniZ65LF2w8sRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Custom fonts for this template -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Custom styles for this template -->
+  <link href="static/css/mi.css" rel="stylesheet">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <style>
+
+      </style>
+</head>
+<body>
+  <div id="dibujo">
+    <canvas id="chart2"></canvas>
+  </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="background-color:white;opacity: 0.8;">
+      <div class="container">
+        <a class="js-scroll-trigger" href="#">
+          <img src="static/img/logo.png" class="img-rounded" alt="jfdata logo" width="30" height="23"> 
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#yo">Conóceme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =======================  LANDING SECTION ======================= -->
+
+
+
+
+      <div id="page-top" class="container" style="font-family:'Arial';font-size:46px;margin-top:40vh">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6" style="background-color:white;text-align: center;opacity: 0.8;">
+    <h1 ><img src="static/img/logo.png" class="img-rounded" alt="jfdata logo" width=60 height=60 style="vertical-align:top;"> <b style="vertical-align:bottom"> Juan Fco. García</b> </h1>
+  <hr>
+  </div>
+  <div class="col-sm-3"></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6" style="color:darkslateblue;background-color:white;text-align: center;opacity: 0.8;">
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-square-twitter"></i>
+      <i class="fa-brands fa-square-github"></i>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+  <div class="row" style="margin-top:10vh">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6" style="background-color:white;text-align: center;opacity: 0.8;">
+    <p style="font-size:16px;font-weight:bold;font-family:Arial, Helvetica, sans-serif;">Bienvenido a la <ins>página</ins> de Juan Francisco García <br> desarrollo aplicaciones de análisis y visualización de datos.</p>
+  </div>
+    <div class="col-sm-3"></div>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6" style="background-color:white;text-align: center;opacity: 0.8;">
+        <button id="conoceme" type="button" class="btn btn-outline-primary btn-lg">Conóceme</button>
+        <button id="contactame" type="button" class="btn btn-outline-primary btn-lg">Contáctame</button>
+      </div>
+      <div class="col-sm-3"></div>
+  </div>
+  </div>
+
+
+
+
+  <!-- ======================= YO ======================= -->
+  <div id="yo" class="container" style="margin-top:20vh">
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="static/img/yo.jpg" class="img-rounded" alt="jfdata foto" height="300">
+      </div>
+      <div class="col-sm-8">
+<p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;font-weight: bold;color:dimgrey"><br><br>Hola, soy Juan Francisco García.<br><br>
+Mi pasión consiste en ayudar a empresas e investigadores a analizar sus conjuntos de datos.<br><br>Estoy capacitado para la mayoría de los pasos de la ciencia de datos: Obtención y preprocesamiento de datos (ETL), análisis exploratorio e interpretación de datos (EDA),aplicación de métodos estadísticos, visualización de datos y comunicación de resultados.<br><br>
+Puesta en marcha de pipelines y algoritmos de Machine Learning en producción.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- ======================= SERVICIOS ======================= -->
+  <div id="servicios" class="container" style="margin-top:20vh">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <p style="text-align:center">Servicios</p>
+        <hr>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;font-style: italic;text-align: center;">Mi experiencia puede servirle para seleccionar los datos y las fuentes, limpiar, analizar y visualizar sus datos.<br> Esto le permite una interpretación inmediata de los desafíos a los que se enfrenta en su actividad diaria e implementar soluciones eficientes que simplificen sus procesos.</p>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <div class="row" style="margin-top:10vh">
+      <div class="col-sm-3">
+        <div class="card logo mx-auto">
+          <div class="card-body">
+            <i id="gestion" class="fa-solid fa-table" ></i>
+          </div>
+       </div>
+       <br>
+       <h5 id="gestion" style="color:dodgerblue;text-align:center;text-decoration:underline">Gestión de datos</h5>
+       <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:center">Recogida, limpieza y remodelación de datos. Desarrollo de flujos de trabajo automatizados.</p>
+       <p id="gestion" class="mas">+</p>
+      </div>
+      <div class="col-sm-3">
+        <div class="card logo mx-auto">
+          <div class="card-body">
+            <i id="buscar" class="fa-solid fa-magnifying-glass"></i>
+          </div>
+       </div>
+       <br>
+       <h5 id="buscar" style="color:dodgerblue;text-align:center;text-decoration:underline">Minería de datos</h5>
+       <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:center">Exploración de datos, aplicación de métodos estadísticos, análisis de datos reproducibles.</p>
+       <p id="buscar" class="mas">+</p>
+      </div>
+      <div class="col-sm-3">
+        <div class="card logo mx-auto">
+          <div class="card-body">
+            <i id="dashboard" class="fa-solid fa-chart-column" ></i>
+          </div>
+       </div>
+       <br>
+       <h5 id="dashboard" style="color:dodgerblue;text-align:center;text-decoration:underline">Reportes y cuadros de mando</h5>
+       <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:center">Creación de dashboards estáticos o dinámicos y automatización de reportes.</p>
+       <p id="dashboard" class="mas">+</p>
+      </div>
+      <div class="col-sm-3">
+        <div class="card logo mx-auto">
+          <div class="card-body">
+            <i id="ml" class="fa-solid fa-arrow-up-right-dots"></i>
+          </div>
+       </div>
+       <br>
+       <h5 id="ml" style="color:dodgerblue;text-align:center;text-decoration:underline">Machine learning</h5>
+       <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:center"> Puesta en producción de algoritmos de inteligencia artifical para obtención de predicciones.</p>
+       <p id="ml" class="mas">+</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ======================= PORTFOLIO ======================= -->
+  <div id="portfolio" class="container" style="margin-top:20vh">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <p style="text-align:center">Portfolio</p>
+        <hr>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;font-style: italic;text-align: center;">Mi experiencia puede servirle para seleccionar los datos y las fuentes, limpiar, analizar y visualizar sus datos.<br> Esto le permite una interpretación inmediata de los desafíos a los que se enfrenta en su actividad diaria e implementar soluciones eficientes que simplifican los procesos de su actividad.</p>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <div class="row" style="margin-top:10vh">
+      <div class="col-sm-3">
+        <div class="card logo mx-auto">
+          <div class="card-body">
+            <i id="gestion" class="fa-solid fa-table" ></i>
+          </div>
+       </div>
+       <br>
+       <h5 id="gestion" style="color:dodgerblue;text-align:center;text-decoration:underline">Gestión de datos</h5>
+       <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:center">Recogida, limpieza y remodelación de datos. Desarrollo de flujos de trabajo automatizados.</p>
+       <p id="gestion" class="mas">+</p>
+      </div>
+      <div class="col-sm-3">
+        <div class="card logo mx-auto">
+          <div class="card-body">
+            <i id="buscar" class="fa-solid fa-magnifying-glass"></i>
+          </div>
+       </div>
+       <br>
+       <h5 id="buscar" style="color:dodgerblue;text-align:center;text-decoration:underline">Minería de datos</h5>
+       <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:center">Exploración de datos, aplicación de métodos estadísticos, análisis de datos reproducibles.</p>
+       <p id="buscar" class="mas">+</p>
+      </div>
+      <div class="col-sm-3">
+        <div class="card logo mx-auto">
+          <div class="card-body">
+            <i id="dashboard" class="fa-solid fa-chart-column" ></i>
+          </div>
+       </div>
+       <br>
+       <h5 id="dashboard" style="color:dodgerblue;text-align:center;text-decoration:underline">Reportes y cuadros de mando</h5>
+       <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:center">Creación de dashboards estáticos o dinámicos y automatización de reportes.</p>
+       <p id="dashboard" class="mas">+</p>
+      </div>
+      <div class="col-sm-3">
+        <div class="card logo mx-auto">
+          <div class="card-body">
+            <i id="ml" class="fa-solid fa-arrow-up-right-dots"></i>
+          </div>
+       </div>
+       <br>
+       <h5 id="ml" style="color:dodgerblue;text-align:center;text-decoration:underline">Machine learning</h5>
+       <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:center"> Puesta en producción de algoritmos de inteligencia artifical para obtención de predicciones.</p>
+       <p id="ml" class="mas">+</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ======================= contacto ======================= -->
+  <div id="contacto" class="container" style="margin-top:20vh">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <p style="text-align:center">Contacto</p>
+        <hr>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;font-style: italic;text-align: center;">No dude en ponerse en contacto conmigo por cualquier asunto <a href="mailto:jfgm.data@gmail.com">jfgm.data@gmail.com</a></p>
+      </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+    <div id="map"></div>
+  </div>
+
+
+  <!-- ======================= FOOTER SECTION ================================ -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span style="font-size:12px;font-family:Arial, Helvetica, sans-serif;text-align:left;font-weight:bold;color:dimgrey">Copyright &copy; Juan Francisco García - 2022</span>
+        </div>
+        <div class="col-md-4">
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-square-github"></i>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a style="font-size:12px;font-family:Arial, Helvetica, sans-serif;text-align:left;font-weight:bold;color:dimgrey" href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a style="font-size:12px;font-family:Arial, Helvetica, sans-serif;text-align:left;font-weight:bold;color:dimgrey" href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal gestión -->
+<div class="modal" id="mgestion">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-3">
+          </div>
+            <div class="col-sm-6">
+              <div class="card logo mx-auto">
+                <div class="card-body">
+                  <i id="imgestion" class="fa-solid fa-table" ></i>
+                </div>
+              </div>
+            </div>
+            <div id="cierra" class="col-sm-3" style="text-align:right;vertical-align:top;cursor:pointer">x
+            </div>
+        </div>
+            <h5 id="gestion" style="color:dodgerblue;text-align:center;text-decoration:underline">Gestión de datos</h5>
+            <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left;font-weight:bold;color:dimgrey"> Un proyecto de datos siempre comienza con un paso de ingeniería de datos. Es necesario recoger los datos y almacenarlos en un formato adecuado para poder utilizarlos.</p>
+            <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left;text-decoration:underline;"><i>Puedo ayudarte a...</i></p>
+            <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Recoger datos de diferentes fuentes como APIs, bases de datos SQL u hojas de cálculo de Excel.</p>
+            <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Reformatear y remodelar los datos para facilitar los análisis posteriores.</p>
+            <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Limpiar los conjuntos de datos eliminando los valores atípicos, nulos y fuera de rango.</p>
+            <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Crear flujos de trabajo de preparación de datos reproducibles.</p>
+            <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Automatizar la creación de informes.</p>
+            <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left;text-decoration:underline;"><i>Ejemplos...</i></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal buscar -->
+  <div class="modal" id="mbuscar">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-3">
+            </div>
+              <div class="col-sm-6">
+                <div class="card logo mx-auto">
+                  <div class="card-body">
+                    <i id="imbuscar" class="fa-solid fa-magnifying-glass" ></i>
+                  </div>
+                </div>
+              </div>
+              <div id="cierra" class="col-sm-3" style="text-align:right;vertical-align:top;cursor:pointer">x
+              </div>
+          </div>
+              <h5 id="imbuscar" style="color:dodgerblue;text-align:center;text-decoration:underline">Minería de datos</h5>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left;font-weight:bold;color:dimgrey">Existen muchas técnicas que permiten la captura de datos de diferentes fuentes de información. Capturar,representar y actualizar la información relacionada con nuestra actividad nos ofrece una importante mejora competitiva.</p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left;text-decoration:underline;"><i>Puedo ayudarte a...</i></p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Recoger datos de diferentes fuentes como APIs, páginas web, repositorios oficiales de estádisticas o licitaciones.</p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Reformatear y remodelar los datos para facilitar los análisis posteriores.</p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Crear flujos de trabajo de captura de datos externos.</p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Entender las relaciones entre las variables.</p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Automatizar la creación de informes.</p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left;text-decoration:underline;"><i>Ejemplos...</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal dash -->
+  <div class="modal" id="mdash">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-3">
+            </div>
+              <div class="col-sm-6">
+                <div class="card logo mx-auto">
+                  <div class="card-body">
+                    <i id="imdash" class="fa-solid fa-chart-column" ></i>
+                  </div>
+                </div>
+              </div>
+              <div id="cierra" class="col-sm-3" style="text-align:right;vertical-align:top;cursor:pointer">x
+              </div>
+          </div>
+              <h5 id="imdash" style="color:dodgerblue;text-align:center;text-decoration:underline">Reportes y cuadros de mando</h5>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left;font-weight:bold;color:dimgrey">Porque ningún trabajo de ciencia de datos o machine learning sirve de nada si no se pone la información y los resultados claros y concisos a la vista de quien toma las decisiones.</p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left;text-decoration:underline;"><i>Puedo ayudarte a...</i></p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Creación y revisión de gráficos para publicación o consumo interno.</p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Desarrollos de aplicaciones de datos en distintas plataformas.</p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Creación de visualización de datos a medida para la web.</p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Creación de cuadros de mando para el análisis de datos en tiempo real.</p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Visualización de datos geoespaciales.</p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Creación de reportes automaticos en formatos tradicionales (excel, word, pdf).</p>
+              <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left;text-decoration:underline;"><i>Ejemplos...</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Modal ML -->
+    <div class="modal" id="mml">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-3">
+              </div>
+                <div class="col-sm-6">
+                  <div class="card logo mx-auto">
+                    <div class="card-body">
+                      <i id="imml" class="fa-solid fa-arrow-up-right-dots" ></i>
+                    </div>
+                  </div>
+                </div>
+                <div id="cierra" class="col-sm-3" style="text-align:right;vertical-align:top;cursor:pointer">x
+                </div>
+            </div>
+                <h5 id="imml" style="color:dodgerblue;text-align:center;text-decoration:underline">Machine Learning</h5>
+                <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left;font-weight:bold;color:dimgrey">Trabajo con algoritmos de machine learning supervisados y no supervisados que permiten establecer predicciones o hallar soluciones a problemas complejos.</p>
+                <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left;text-decoration:underline;"><i>Puedo ayudarte a...</i></p>
+                <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Crear aplicaciones que resuelvan operaciones sencillas (Regresiones lineales, logísticas)</p>
+                <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Clasificaciones (Naïve-Bayes)</p>
+                <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Redes neuronales</p>
+                <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Reconocimiento de imágenes</p>
+                <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Reconocimiento de voz.</p>
+                <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left">* Análisis de sentimiento.</p>
+                <p style="font-size:16px;font-family:Arial, Helvetica, sans-serif;text-align:left;text-decoration:underline;"><i>Ejemplos...</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0-beta/dist/chart.min.js"></script>
+<script src="static/js/dibujo.js"></script>
+
+</body>
+<script src="static/js/app.js">
+</script>
+</html>
