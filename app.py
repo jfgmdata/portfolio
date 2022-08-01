@@ -4,10 +4,10 @@ from werkzeug.utils import secure_filename
 import os, os.path
 from datetime import date
 app = Flask(__name__)
-app.config['UPLOAD_EXTENSIONS'] = ['.pdf']
-app.config['UPLOAD_PATH'] = 'despl-ofertas'
+app.config['UPLOAD_EXTENSIONS'] = ['.pdf','.xls','.xlsx','.csv']
+app.config['UPLOAD_PATH'] = 'uploads'
 app.secret_key = 'esto-es-una-clave-muy-secreta'
-#app.register_blueprint(base,url_prefix='-base',template_folder='templates',static_folder='static')
+#app.register_blueprint(base,url_prefix='/excel',template_folder='templates',static_folder='static')
 #app.register_blueprint(proyectos,url_prefix='-proyectos',template_folder='templates',static_folder='static')
 #app.register_blueprint(unidades,url_prefix='-unidades',template_folder='templates',static_folder='static')
 #app.register_blueprint(rooms,url_prefix='-rooms',template_folder='templates',static_folder='static')
